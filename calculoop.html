@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="cmufavicon.png">
+	<title>Speed of Light</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--css code from http://www.w3schools.com/cssref/css3_pr_filter.asp-->
+	<style type="text/css">
+		table, td {
+			border: 1px solid black;
+		}
+		p, h1, div {
+			margin-right: 30px;
+			margin-left: 30px;    
+		}
+		button {
+			margin-left: 30px;    
+		}
+		#footer {
+		    bottom : 0;
+		    height : 40px;
+		    margin-top : 40px;
+		  }
+	</style>
+</style>
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="speedoflight.html">Home</a></li>
+	      <li><a href="about_hyperloop.html">About Hyperloop</a></li>
+		  <li><a href="calculoop.html">Calcu-loop</a></li>
+	      <li><a href="hyperloop_quiz.html">Test Your Knowledge</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	
+<br/><br/><br/>
+	
+		<h1>Hyperloop: <i>Travel at the Speed of Light</i></h1>
+<br/>
+<button id="featured" style="position:absolute;vertical-align:middle;text-align:center;; background-color:orange" type="button" onclick="sanFranToLosAng()"><b>QUICK CALC BUTTON</b> <br/>Click to show Hyperloop vs<br/>Train costs from SF to LA</button>
+	</p>
+	
+<img src="speed.jpeg"  style="margin:0px auto;display:block; max-width: 75%; max-height: 75%;"></img>
+
+<div><h2 id="calcHead">The Calcu-loop</h2></div>
+</body>
+
+<section id="calc">
+<p>Enter <input onmouseover="myHint()" onkeyup="inLine()" id="miles" style="background-color:white"># of miles</input> and see what the future of transporation holds.</p>
+
+<button type="button" style="background-color:orange" onmouseover="myNoHint()" onclick="noInput(), createTable()">Compare Stats</button>
+<button type="button" onclick="helpPrompt()">Help! I'm Stuck</button>
+<button type="button" style="font-size:7pt;color:red;background-color:white;" onclick="myUndo()">Undo</button>
+
+
+<p id="hint"></p>
+<p id="validate"></p>
+
+<div>
+
+<table id="myTable">
+ <tr>
+   <td><b>Category</b></td>
+   <td><b>Hyperloop Stats</b></td>
+   <td><b>Train Stats</b></td>
+ </tr>
+ <tr>
+   <td>Approximate cost / trip</td>
+   <td><p id="text1a"></p></td>
+   <td><p id="text1b"></p></td>
+ </tr>
+ <tr>
+   <td>Approximate cost to build the infrastructure</td>
+   <td><p id="text2a"></p></td>
+   <td><p id="text2b"></p></td>
+ </tr>
+ <tr>
+   <td>Maximum velocity</td>
+   <td><p id="text3a"></p></td>
+   <td><p id="text3b"></p></td>
+ </tr>
+ <tr>
+   <td>Fastest possible commute time</td>
+   <td><p id="text4a"></p></td>
+   <td><p id="text4b"></p></td>
+ </tr>
+</table>
+
+<p id="times">Times: </p>
+<p id="history">History: </p>
+
+</div>
+
+
+<footer id="footer">
+	<p>
+	The site is in honor of the <a href="http://www.cmuhyperloop.com/"><font color="FFA500">CMU Hyperloop team</font></a> which competed at SpaceX headquarters on January 28th and placed 8 out of 27 other teams. Congratulations, team!
+	</p>
+</footer>
+</html>
+
+
+
+	

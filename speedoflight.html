@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="cmufavicon.png">
+	<title>Speed of Light</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--css code from http://www.w3schools.com/cssref/css3_pr_filter.asp-->
+<style type="text/css">
+	table, td {
+		border: 1px solid black;
+	}
+	p, h1, button, div {
+		margin-right: 30px;
+		margin-left: 30px;    
+	}
+	#footer {
+	    bottom : 0;
+	    height : 40px;
+	    margin-top : 40px;
+	  }
+	img {
+	    max-width: 100%;
+	    max-height: 100%;
+	 }
+</style>
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="speedoflight.html">Home</a></li>
+	      <li><a href="about_hyperloop.html">About Hyperloop</a></li>
+		  <li><a href="calculoop.html">Calcu-loop</a></li>
+	      <li><a href="hyperloop_quiz.html">Test Your Knowledge</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	
+<br/><br/>
+	
+		<h1>Hyperloop: <i>Travel at the Speed of Light</i></h1>
+		<p>Welcome! This is a page designed to introduce you to the next frontier of ground transporation: Hyperloop</p> 
+		<p id="firstInteraction">What would you like to explore first?</p> 
+
+<button id = "optionbutton" type="button" onclick="document.getElementById('optionbutton').style.display='none', userOptions()">Options</button>
+			<div id="settingsselect" style="display:none">
+			<h2>User Options</h2>
+			<input type=radio id="set1" name=myradio >Hyperloop Calculator<br>
+			<input type=radio id="set2" name=myradio >Brief History<br>
+			<input type=radio id="set3" name=myradio >Hyperloop Quiz<br>
+			</br> <button type="button" onclick="optionSelect()">Submit</button>
+		</div>
+
+<br/><br/>
+
+<div><img src="hyperloop_pod.jpg"></img></div>
+
+<footer id="footer">
+	<p>
+	The site is in honor of the <a href="http://www.cmuhyperloop.com/"><font color="FFA500">CMU Hyperloop team</font></a> which competed at SpaceX headquarters on January 28th and placed 8 out of 27 other teams. Congratulations, team!
+	</p>
+</footer>
+</html>
+
+
+
+	

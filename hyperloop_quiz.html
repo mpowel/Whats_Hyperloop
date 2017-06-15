@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="icon" href="cmufavicon.png">
+	<title>Fun Quiz!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        onLoad();
+    });
+	
+	function onLoad(){
+			document.getElementById("ans1").checked = true;
+		 }
+</script>
+		 
+		 <style type="text/css">
+		 	div {
+		 		margin-right: 150px;
+		 		margin-left: 30px;    
+		 	}
+		 	#footer {
+		 	    bottom : 0;
+		 	    height : 40px;
+		 	    margin-top : 40px;
+		 	  }
+		 </style>
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="speedoflight.html">Home</a></li>
+	      <li><a href="about_hyperloop.html">About Hyperloop</a></li>
+		  <li><a href="calculoop.html">Calcu-loop</a></li>
+	      <li><a href="hyperloop_quiz.html">Test Your Knowledge</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+</br></br></br></br>
+<form name="formOne">
+	
+<div id="hideOne">
+	<img src="1pod.png" alt="progress1" style="width:374px;height:50px;">
+	<h3>Question 1</h3>
+	<p id="q1">True or False: Hyperloop was invented by Elon Musk, the founder of SpaceX.</p>
+		<input type="radio" name="isTrue" id="ans1" value="1">True</input><br>
+		<input type="radio" name="isTrue" id="ans2" value="0">False</input><br><br>
+
+
+<p hidden id="a1">The correct answer is false: Elon Must published a <a href="http://www.spacex.com/sites/spacex/files/hyperloop_alpha-20130812.pdf">white paper</a> outlining the technical and financial details of building a Hyperloop public transportation system between San Francisco and Los Angeles, but tubular pneumatic propulsion transportation systems were first proposed <a href ="https://en.wikipedia.org/wiki/Atmospheric_railway">as early as 1799</a> and a few semi-vacuum locomotive systems were built and run in the <a href="http://www.ikbrunel.org.uk/atmospheric-railway">mid 1840s</a>.</p>
+
+	<button type="button" ><a href="speedoflight.html">Home</a></button>
+	<button type="button" onclick="question1()">Submit</button> 
+	<button id="nextOne" type="button"  onclick="hideOne(), showTwo()">Next</button>
+
+</div>
+
+<div hidden id="hideTwo">
+	<img src="2pod.png" alt="progress2" style="width:330px;height:50px;">
+	<h3>Question 2</h3>
+	<p id="q2">True or False: Supersonic ground transportation is only possible with electromagnetic levitation.</p>
+		<input type="radio" name="isTrue" id="ans3" value="1">True</input><br>
+		<input type="radio" name="isTrue" id="ans4" value="0">False</input><br><br>
+
+
+<p hidden id="a2">The correct answer is false: The key to supersonic speeds at sea level is reducing air friction, therefore the vacuum tube is the only required portion of Hyperloop transportation. In fact, Elon Musk's original proposal was based on air bearings. Certainly the most common propulsion and levitation sub-systems are a combination of <a href="https://en.wikipedia.org/wiki/Linear_induction_motor">linear induction motors</a> and electromagnets. However, some student teams have even experimented with designing wheel-based pods. That, of course, won't be possible once the pods are able to reach speeds over 300 mph, but as long as they don't burn up, wheels are quite effective. <br/><br/> Fun fact: Linear induction motors are already used today in many amusement park rides across the United States.</p>
+
+	<button id="backTwo" type="button"  onclick="hideTwo(), showOne()">Back</button>
+	<button type="button" onclick="question2()">Submit</button> 
+	<button id="nextTwo" type="button"  onclick="hideTwo(), showThree()">Next</button>
+
+</div>
+
+<div hidden id="hideThree">
+	<img src="3pod.png" alt="progress3" style="width:350px;height:50px;">
+	<h3>Question 3</h3>
+	<p id="q3">Between the 60+ members on the Carnegie Mellon Hyperloop team, how many different schools are represented?</p>
+		<input id="schools" type="text" name="members"></input><br>
+
+<p hidden id="a3">The correct answer is 5: CMU Hyperloop is the only club on campus that has members from 5 different CMU colleges: College of Engineering, Integrated Innovation Institute, Tepper Business School, School of Design and School of Drama. 
+
+</p>
+
+	<button id="backThree" type="button"  onclick="hideThree(), showTwo()">Back</button>
+	<button type="button" onclick="question3()">Submit</button> 
+	<button type="button" style="background-color:gray" onclick="helpPrompt()">Help!</button>
+</div>
+
+
+</form>
+<div>
+<p id="nextStep"></p>
+<p id="answer"></p>
+
+<button hidden id="backHomeButton" type="button" ><a href="speedoflight.html">Back to Home</a></button>
+</br>
+</div>	
+
+<div>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/Z-rlsg9JS4c">
+</iframe>
+</div>
+
+</body>
+<footer id="footer">
+	<div>
+	The site is in honor of the <a href="http://www.cmuhyperloop.com/"><font color="FFA500">CMU Hyperloop team</font></a> which competed at SpaceX headquarters on January 28th and placed 8 out of 27 other teams. Congratulations, team!
+</div>
+</footer>
+</html>
+
